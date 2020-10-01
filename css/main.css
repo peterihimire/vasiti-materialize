@@ -1,0 +1,41 @@
+:root {
+  font-size: 62.5%;
+  --primaryColor: #ff5c00;
+  --mainGrey: #e5e5e5;
+  --greenColor: #049a01;
+  --darkGrey: #494949;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainSpacing: 0.2rem;
+  --lineHeight: 1.4;
+  --mediumFont: 5.5rem;
+  --main-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** globals *****/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--mainWhite);
+  overflow-x: hidden;
+  color: var(--mainBlack);
+  font-size: 1.6rem;
+}
+
+/***** end of globals *****/
+
+/***** navbar *****/
+.trans-nav {
+  background-color: transparent;
+  z-index: 10;
+  height: 9rem;
+
+  box-shadow: none;
+}
+
+/***** end of navbar *****/
