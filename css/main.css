@@ -1,5 +1,5 @@
 :root {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   --primaryColor: #ff5c00;
   --mainGrey: #e5e5e5;
   --greenColor: #049a01;
@@ -12,30 +12,55 @@
   --main-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /***** globals *****/
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--mainWhite);
   overflow-x: hidden;
   color: var(--mainBlack);
   font-size: 1.6rem;
+} */
+@media screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
 }
 
 /***** end of globals *****/
 
 /***** navbar *****/
-.trans-nav {
+nav.trans-nav {
   background-color: transparent;
+  /* background-color: yellowgreen; */
   z-index: 10;
-  height: 9rem;
+  /* height: 60px; */
 
-  box-shadow: none;
+  /* box-shadow: none; */
 }
-
+.nav-links a {
+  color: var(--mainBlack);
+  text-transform: uppercase;
+}
+.logo {
+  width: 120px;
+}
+.nav-login-group {
+  display: flex;
+}
+.nav-btn {
+  background-color: var(--primaryColor);
+  margin-left: 0 !important;
+}
+/* nav .nav-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+} */
 /***** end of navbar *****/
