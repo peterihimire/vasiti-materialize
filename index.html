@@ -35,7 +35,7 @@
             <li class="nav-item nav-login-group">
               <a href="#">log in</a>
               <span>
-                <a href="#" class="btn nav-btn white-text">stories</a></span
+                <a href="#" class="btn nav-btn white-text">sign up</a></span
               >
             </li>
           </ul>
@@ -81,26 +81,53 @@
         <a href="#">log in</a>
       </li>
       <li class="nav-item ">        
-          <a href="#" class="btn  white-text">stories</a>
+          <a href="#" class="btn  white-text">sign up</a>
       </li>
     </ul>
     <!----- end of navbar ------>
 
     <!----- header-section ------>
-    <section class="section">
-
-    </section>
+    <header class="hero" id="home">
+        <div class="row ">
+          <div class="container  ">
+            <div class="carousel carousel-slider " >
+              <div class="carousel-item valign-wrapper ">
+                <div class="col s12 center-xs valign-wrapper ">
+                  <div class="col s12 m6">
+                    <div class="main-text-container">
+                      <h4>Amazing Experiences from Our Wonderful Customers</h4>
+                      <p class="hidden-xs">Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="rel-position right-align">
+                      <img src="images/man-and-lady.png" alt="models-1" class="banner-img">
+                    </div>
+                  </div>
+                  <!-- <div class="col s12 visible-xs">
+                    <p>Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     <!----- end of header-section ------>
 
 
 
     <!-- javascript -->
     <script src="js/materialize.js"></script>
+ 
 
-    <!-- <script>
+    <script>
       // sidenav
       const sideNav = document.querySelector(".sidenav");
       M.Sidenav.init(sideNav, {});
-    </script> -->
+      // header carousel
+      const headerCarousel = document.querySelector('.carousel');
+      M.Carousel.init(headerCarousel, {});
+    </script>
   </body>
 </html>
