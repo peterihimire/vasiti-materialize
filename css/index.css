@@ -1,0 +1,13 @@
+/***** header  *****/
+header {
+  /* min-height: calc(95vh - 64px); */
+  min-height: 90vh;
+  position: relative;
+  /* background-color: turquoise; */
+  
+}
+.carousel{
+  height: 100% !important ;
+}
+
+/***** end of header *****

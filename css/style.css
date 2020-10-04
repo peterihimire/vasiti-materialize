@@ -33,26 +33,65 @@
   box-sizing: border-box;
 }
 
+.full-width {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.hidden-xs {
+  display: block;
+}
+.visible-xs {
+  display: none;
+}
+.flex-div {
+  display: flex;
+}
+.mag-0 {
+  margin: 0 !important;
+}
+.mag-bottom-0 {
+  margin-bottom: 0 !important;
+}
+.mag-top-0 {
+  margin-top: 0 !important;
+}
+.fg-1 {
+  flex-grow: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.pad0 {
+  padding: 0 !important;
+}
+.hidden {
+  display: none;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.text-justify {
+  text-align: justify;
+}
+
 /***** globals *****/
-/* body {
+body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--mainWhite);
   overflow-x: hidden;
   color: var(--mainBlack);
-  font-size: 1.6rem;
-} */
-/* .full-height {
-  height: 100%;
-} */
-/* .view-height {
-  height: 100vh;
-} */
+  /* font-size: 1.6rem; */
+}
 @media screen and (min-width: 993px) {
   .container {
     width: 80%;
   }
 }
-
 /***** end of globals *****/
 
 /***** navbar *****/
@@ -68,8 +107,11 @@ nav.trans-nav {
   color: var(--mainBlack);
   text-transform: uppercase;
 }
+
 .logo {
   width: 120px;
+  position: relative;
+  /* top: 20px; */
 }
 .nav-login-group {
   display: flex;
@@ -80,30 +122,9 @@ nav.trans-nav {
   margin-right: 0 !important;
 }
 
+.sidenav-trigger {
+  position: relative;
+  top: 5px;
+}
+
 /***** end of navbar *****/
-
-/***** header *****/
-header {
-  /* min-height: calc(95vh - 64px); */
-  min-height: 90vh;
-  background-color: turquoise;
-}
-.banner-img {
-  width: 100%;
-}
-
-.valign-wrapper {
-  height: 100vh;
-  background-color: red;
-}
-
-/* .center-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0 !important;
-  width: 100%;
-} */
-
-/***** end of header *****/
