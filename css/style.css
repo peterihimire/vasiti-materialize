@@ -27,11 +27,22 @@
   background: rgba(6, 31, 53, 0.7);
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--mainWhite);
+  overflow-x: hidden;
+  color: var(--mainBlack);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  /* font-size: 1.6rem; */
+}
+/* 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .full-width {
   width: 100%;
@@ -80,18 +91,7 @@
 }
 
 /***** globals *****/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--mainWhite);
-  overflow-x: hidden;
-  color: var(--mainBlack);
-  /* font-size: 1.6rem; */
-}
-@media screen and (min-width: 993px) {
-  .container {
-    width: 80%;
-  }
-}
+
 /***** end of globals *****/
 
 /***** navbar *****/
@@ -128,3 +128,18 @@ nav.trans-nav {
 }
 
 /***** end of navbar *****/
+
+@media (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+}

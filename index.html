@@ -8,8 +8,28 @@
     <link rel="stylesheet" href="css/materialize.css" />
     <!----- my css ------>
     <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <link rel="stylesheet" href="css/index.css" />
+ 
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+       #main-contents-wrapper {
+        min-height: 90vh;
+        width: 100%;
+      }
+      .cursor {
+        cursor: pointer;
+      }
+    </style>
+    <link rel="stylesheet" href="css/index.css" />
+
+
+    <style>
+
+      @media (min-width: 601px) {
+        img.home-img {
+          width: 95%;
+        }
+      }
+    </style>
   </head>
   <body>
     <!----- navbar ------>
@@ -88,13 +108,15 @@
     </ul>
     <!----- end of navbar ------>
 
-    <!----- header-section ------>
-    <header class="hero" id="home">
+  
+    <div id="main-contents-wrapper">
+      <!----- header-section ------>
+      <section id="home">
         <div class="row full-height">
           <div class="container full-height ">
-            <div class="carousel carousel-slider  " >
+            <div class="carousel carousel-slider full-height  " >
               <div class="carousel-item  ">
-                <div class="col s12 center-xs  ">
+                <div class="col s12 pad0 center-xs  ">
                   <div class="col s12 m6">
                     <div class="main-txt-container">
                       <h4>Amazing Experiences from Our Wonderful Customers</h4>
@@ -103,7 +125,7 @@
                   </div>
                   <div class="col s12 m6">
                     <div class="rel right-align">
-                      <img src="images/man-and-lady.png" alt="models-1" class="banner-img">
+                      <img src="images/man-and-lady.png" alt="models-1" class="full-width home-img">
                     </div>
                   </div>
                   <div class="col s12 visible-xs">
@@ -114,8 +136,10 @@
             </div>
           </div>
         </div>
-      </header>
+    </section>
     <!----- end of header-section ------>
+    </div>
+
 
 
 
