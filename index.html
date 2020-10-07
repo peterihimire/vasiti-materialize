@@ -109,12 +109,12 @@
     <!----- end of navbar ------>
 
   
-    <div id="main-contents-wrapper">
+    <!-- <div id="main-contents-wrapper"> -->
       <!----- header-section ------>
       <section id="home">
         <div class="row full-height">
           <div class="container full-height ">
-            <div class="carousel carousel-slider full-height  " >
+            <div class="carousel carousel-slider full-height" >
               <div class="carousel-item  ">
                 <div class="col s12 pad0 center-xs  ">
                   <div class="col s12 m6">
@@ -133,20 +133,82 @@
                   </div>
                 </div>
               </div>
+              <div class="carousel-item  ">
+                <div class="col s12 pad0 center-xs  ">
+                  <div class="col s12 m6">
+                    <div class="main-txt-container">
+                      <h4>Amazing Experiences from Our Wonderful Customers</h4>
+                      <p class="hidden-xs">Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="rel right-align">
+                      <img src="images/two-sweeties.png" alt="models-1" class="full-width home-img">
+                    </div>
+                  </div>
+                  <div class="col s12 visible-xs">
+                    <p>Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
     </section>
     <!----- end of header-section ------>
-    </div>
+
+    <!----- experience-section ------>
+    <section class="experience">
+      <div class="row">
+        <div class="container">
+          <div class="col s12">
+            <div class="col s12 m6">
+              <div class="">
+                <img src="images/two-sweeties.png" alt="two-ladies" class="experience-img">
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="experience-text-side">
+                <h4>Tolu and Joys Experience</h4>
+                <p>I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!</p>
+                <img src="images/share-story-link.png" alt="share-story-link">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!----- end of experience-section ------>
+
+
+  <!-- </div> -->
 
 
 
 
     <!-- javascript -->
+    <script src="https://paymonthlycars.com/js/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
- 
+  
+    <script>
+      $(document).ready(function () {
+          
+            $(".carousel.carousel-slider").carousel({
+              fullWidth: true,
+            });
+            $(".carousel.carousel-slider.visible-xs.mbxs").carousel({
+              fullWidth: false,
+            });
+            window.setInterval(function () {
+              $("#home .carousel.carousel-slider").carousel("next");
+            }, 5000);
+          });
 
+    </script>
     <script>
       // sidenav
       const sideNav = document.querySelector(".sidenav");
@@ -154,6 +216,8 @@
       // header carousel
       const headerCarousel = document.querySelector('.carousel');
       M.Carousel.init(headerCarousel, {});
+
+
     </script>
   </body>
 </html>
