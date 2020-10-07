@@ -49,7 +49,66 @@ div.carousel-item {
 
 /***** experience *****/
 section.experience {
-  padding: 5rem 0 !important;
+  padding: 5rem 0 1rem 0 !important;
   background-color: var(--darkGrey);
+  /* height: 80vh; */
+  /* min-height: 500px; */
+}
+.experience .row {
+  margin-bottom: 0 !important;
+}
+.experience-img {
+  width: 80%;
+}
+.experience-text {
+  padding: 70px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+@media (max-width: 600px) {
+  .experience-img {
+    width: 100%;
+  }
+  .experience-text {
+    padding: 20px 0 0 0;
+  }
 }
 /***** end of experience *****/
+
+/***** customer-vendor *****/
+section.customer-vendor {
+  padding: 5rem 0;
+}
+.customer-item {
+  padding: 1rem 6rem 1rem 1rem !important;
+}
+/***** end of customer-vendor *****/
+
+/***** experience section 2 *****/
+.experience-section-2 {
+  background-color: #fff8f5;
+  padding: 5rem 0 0 0;
+}
+.experience-section-2 .row {
+  margin-bottom: 0;
+}
+.experience-img-2 {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .experience-img-2 {
+    width: 100%;
+  }
+  .experience-text {
+    padding: 20px 0 0 0;
+  }
+}
+/***** end of experience section 2 *****/
+
+/***** vendor section *****/
+.vendor {
+  padding: 5rem 0 0 0;
+}
+/***** end of vendor section *****/
