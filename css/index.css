@@ -3,7 +3,7 @@
 section#home {
   position: relative;
   /* background-color: red; */
-  height: 100vh;
+  height: 95vh;
   min-height: 600px;
   padding-top: 0;
 }
@@ -11,7 +11,7 @@ section#home {
   height: 100% !important ;
 }
 div.carousel-item {
-  padding-top: 12%;
+  padding-top: 15%;
   /* background-color: violet; */
 }
 .main-txt-container {
@@ -67,9 +67,25 @@ section.experience {
   justify-content: center;
   /* align-items: center; */
 }
-.experience-header .experience-title p{
-  padding: 2rem !important;
+.experience-title {
+  display: flex;
+}
+.experience-title p {
+  padding: 0.2rem 0.5rem !important;
   color: var(--mainWhite) !important;
+  border: solid 1px var(--mainWhite);
+  border-radius: 4px;
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500px;
+}
+.experience-detail {
+  margin: 3rem 0;
+}
+.experience-detail p {
+  margin: 0;
+  color: var(--mainWhite);
 }
 @media (max-width: 600px) {
   .experience-img {
@@ -94,6 +110,10 @@ section.customer-vendor {
 .experience-section-2 {
   background-color: #fff8f5;
   padding: 5rem 0 0 0;
+}
+.experience-section-2 .experience-title p {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor) !important;
 }
 .experience-section-2 .row {
   margin-bottom: 0;
@@ -135,7 +155,7 @@ footer {
 .second-footer {
   color: var(--mainWhite);
   padding: 7rem 0 0 0 !important;
-  display: flex;
+  /* display: flex; */
 }
 .second-footer a {
   color: var(--mainWhite);
@@ -152,7 +172,13 @@ footer {
   border-radius: 6px;
   /* justify-content: space-between; */
   align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
+}
+.subscribe-banner{
+  width: 100%;
+}
+input[type=email]:not(.browser-default){
+  border-bottom: none;
 }
 @media (max-width: 600px) {
   .phone-container-main {
@@ -160,6 +186,12 @@ footer {
   }
   .phone-img-container {
     position: static;
+  }
+  .first-footer .subscribe-banner{
+    width: 80% !important;
+  }
+  .be-a-member{
+    width: 70%;
   }
 }
 /***** end of footer section *****/
