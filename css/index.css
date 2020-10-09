@@ -3,7 +3,7 @@
 section#home {
   position: relative;
   /* background-color: red; */
-  height: 95vh;
+  height: 100vh;
   min-height: 600px;
   padding-top: 0;
 }
@@ -61,11 +61,15 @@ section.experience {
   width: 80%;
 }
 .experience-text {
-  padding: 70px 0 0 0;
+  /* padding: 70px 0 0 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+}
+.experience-header .experience-title p{
+  padding: 2rem !important;
+  color: var(--mainWhite) !important;
 }
 @media (max-width: 600px) {
   .experience-img {
@@ -82,7 +86,7 @@ section.customer-vendor {
   padding: 5rem 0;
 }
 .customer-item {
-  padding: 1rem 6rem 1rem 1rem !important;
+  padding: 1rem 5rem !important;
 }
 /***** end of customer-vendor *****/
 
@@ -112,3 +116,50 @@ section.customer-vendor {
   padding: 5rem 0 0 0;
 }
 /***** end of vendor section *****/
+
+/***** footer section *****/
+footer {
+  background-color: var(--vasitiBlack);
+  padding: 5rem 0;
+}
+/* .form-control {
+  display: flex;
+} */
+.phone-container-main {
+  position: relative;
+}
+.phone-img-container {
+  position: absolute;
+  top: -120px;
+}
+.second-footer {
+  color: var(--mainWhite);
+  padding: 7rem 0 0 0 !important;
+  display: flex;
+}
+.second-footer a {
+  color: var(--mainWhite);
+  font-size: 14px;
+  /* padding: 2rem 0; */
+}
+.second-footer li {
+  padding: 0.5rem 0;
+}
+.form-control {
+  width: 90%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 .5rem;
+}
+@media (max-width: 600px) {
+  .phone-container-main {
+    position: static;
+  }
+  .phone-img-container {
+    position: static;
+  }
+}
+/***** end of footer section *****/
