@@ -1,12 +1,15 @@
 :root {
   /* font-size: 62.5%; */
   --primaryColor: #ff5c00;
+  --vasitiBlack: #25201d;
   --mainGrey: #e5e5e5;
-  --greenColor: #049a01;
+  --darkGreen: #049a01;
+  --lightGreen : #f0ffee;
   --darkGrey: #494949;
   --mainWhite: #fff;
   --mainBlack: #222;
-  --vasitiBlack: #25201d;
+  --darkBlue: #0d019a;
+  --lightBlue: #eef8ff;
   --mainSpacing: 0.2rem;
   --lineHeight: 1.4;
   --mediumFont: 5.5rem;
@@ -24,7 +27,7 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primaryColor);
+  background: var(--vasitiBlack);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -136,7 +139,6 @@ nav.trans-nav {
   text-transform: uppercase;
   font-size: 13px !important;
 }
-
 .logo {
   width: 120px;
   position: relative;
@@ -150,27 +152,41 @@ nav.trans-nav {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-
 .sidenav-trigger {
   position: relative;
   top: 5px;
 }
-
 .sidenav {
   background-color: var(--vasitiBlack);
   color: var(--mainWhite);
+  overflow-y: scroll;
 }
 .sidenav-logo {
   background-color: var(--mainWhite);
+  text-align: center;
+  padding: 0.8rem;
 }
 .sidenav li > a {
   color: var(--mainWhite);
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  margin: .5rem 0;
 }
 .sidenav-footer {
-  /* margin: 40px 0 0 0; */
-  position: absolute;
+  margin: 100px 0 0 0;
+  /* position: absolute;
   width: 100%;
-  bottom: 70px;
+  bottom: 70px; */
+}
+.signup-style {
+  background-color: var(--primaryColor);
+
+}
+.login-style a{
+  color: var(--vasitiBlack) !important;
+}
+.login-style {
+  background: var(--mainWhite);
 }
 /***** end of navbar *****/
 
@@ -189,7 +205,7 @@ nav.trans-nav {
   }
 }
 @media only screen and (min-width: 601px) {
-  .sidenav{
+  .sidenav {
     width: 50%;
   }
   .nav-two {
@@ -207,5 +223,20 @@ nav.trans-nav {
   .nav-two-content {
     display: flex;
     justify-content: center;
+  }
+  .sidenav-footer {
+    margin: 100px 0 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+  }
+  .sidenav {
+    background-color: var(--vasitiBlack);
+    color: var(--mainWhite);
+    overflow-y: hidden;
+  }
+  .sidenav li > a{
+    font-size: 2.2rem !important;
+    margin: .6rem 0 0 0;
   }
 }

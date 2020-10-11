@@ -87,7 +87,7 @@ section.experience {
   margin: 0;
   color: var(--mainWhite);
 }
-.share-img-container img{
+.share-img-container img {
   width: 100%;
 }
 @media (max-width: 600px) {
@@ -107,16 +107,22 @@ section.customer-vendor {
 .customer-item {
   padding: 1rem 4rem !important ;
 }
-.c-v-img-container img{
+.c-v-name span {
+  color: var(--darkBlue);
+  background: var(--lightBlue);
+  padding: 0.4rem;
+  margin: 0 0 0 1rem;
+}
+.c-v-img-container img {
   width: 50%;
 }
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .customer-item {
     padding: 1rem 2rem !important;
   }
 }
-@media (max-width: 600px){
-  .c-v-img-container img{
+@media (max-width: 600px) {
+  .c-v-img-container img {
     width: 50%;
   }
   .customer-item {
@@ -154,6 +160,17 @@ section.customer-vendor {
 .vendor {
   padding: 5rem 0 0 0;
 }
+.vendor-txt-wrapper span  {
+  color: var(--darkGreen);
+  background-color: var(--lightGreen);
+  padding: 0.4rem;
+  font-size: 13px;
+  margin-top: .2rem;
+}
+.v-name{
+  display: flex;
+  flex-direction: column;
+}
 /***** end of vendor section *****/
 
 /***** footer section *****/
@@ -176,6 +193,10 @@ footer {
   padding: 7rem 0 0 0 !important;
   /* display: flex; */
 }
+.second-footer h6{
+  font-weight: 550;
+  font-size: 14px;
+}
 .second-footer a {
   color: var(--mainWhite);
   font-size: 14px;
@@ -184,7 +205,9 @@ footer {
 .second-footer li {
   padding: 0.4rem 0;
   text-transform: capitalize;
-  font-size: 14px;
+}
+.second-footer a{
+  font-size: 12px;
 }
 .form-control {
   width: 90%;
@@ -195,16 +218,16 @@ footer {
   align-items: center;
   padding: 0 0.5rem;
 }
-.subscribe-banner{
+.subscribe-banner {
   width: 100%;
 }
-input[type=email]:not(.browser-default){
+input[type="email"]:not(.browser-default) {
   border-bottom: none;
 }
-.be-a-member{
+.be-a-member {
   width: 95%;
 }
-.social-div ul{
+.social-div ul {
   display: flex;
 }
 @media (max-width: 600px) {
@@ -214,21 +237,20 @@ input[type=email]:not(.browser-default){
   .phone-img-container {
     position: static;
   }
-  .be-a-member{
+  .be-a-member {
     width: 100%;
   }
   .second-footer li {
     padding: 0.1rem 0;
     text-transform: capitalize;
-
   }
-  .second-footer a{
+  .second-footer a {
     font-size: 11px !important;
   }
-  .form-control{
+  .form-control {
     width: 100%;
   }
-  .subscribe-banner{
+  .subscribe-banner {
     width: 100% !important;
   }
 }
