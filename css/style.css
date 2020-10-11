@@ -94,7 +94,32 @@ body {
   flex-wrap: wrap;
 }
 /***** globals *****/
-
+.s5ths,
+.m5ths,
+.l5ths,
+.xl5ths {
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.s5ths {
+  width: 20%;
+}
+@media only screen and (min-width: 601px) {
+  .row .col.m5ths {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .row .col.l5ths {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .row .col.xl5ths {
+    width: 20%;
+  }
+}
 /***** end of globals *****/
 
 /***** navbar *****/
@@ -105,7 +130,6 @@ nav.trans-nav {
   z-index: 10;
   height: 64px;
   /* box-shadow: none; */
-
 }
 .nav-links a {
   color: var(--mainBlack);
@@ -132,7 +156,22 @@ nav.trans-nav {
   top: 5px;
 }
 
-
+.sidenav {
+  background-color: var(--vasitiBlack);
+  color: var(--mainWhite);
+}
+.sidenav-logo {
+  background-color: var(--mainWhite);
+}
+.sidenav li > a {
+  color: var(--mainWhite);
+}
+.sidenav-footer {
+  /* margin: 40px 0 0 0; */
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+}
 /***** end of navbar *****/
 
 @media (min-width: 993px) {
@@ -150,6 +189,9 @@ nav.trans-nav {
   }
 }
 @media only screen and (min-width: 601px) {
+  .sidenav{
+    width: 50%;
+  }
   .nav-two {
     line-height: 40px;
     height: 40px;
