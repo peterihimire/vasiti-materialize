@@ -7,8 +7,7 @@
     <!------ materialize css ----->
     <link rel="stylesheet" href="css/materialize.css" />
     <!----- my css ------>
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
- 
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
        #main-contents-wrapper {
@@ -242,7 +241,9 @@
                     <p>I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!</p>
                   </div>
                   <div class="share-img-container">
-                    <img src="images/share-story-link.png" alt="share-story-link">
+                    <a href="#share" class="modal-trigger">
+                      <img src="images/share-story-link.png" alt="share-story-link">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -376,7 +377,9 @@
               </div>
             </div>
             <div class="col s12 m6 offset-m2">
-              <img src="images/woman-shoppingbag.png" alt="woman-shopping" class="experience-img-2">
+              <a href="#share" class="modal-trigger ">
+                <img src="images/woman-shoppingbag.png" alt="woman-shopping" class="experience-img-2">
+              </a>
             </div>
           </div>
         </div>
@@ -596,6 +599,75 @@
 
     <!----- end of Footer Section ------>
 
+    <!----- modal Section ------>
+    <div class="modal" id="share">
+      <div class="modal-content">
+        <div class="row">
+          <!-- <div class="container"> -->
+            <div class="col s12">
+              <div class="modal-header">
+                <h6 class="center">Share your amazing story!</h6>
+              </div>
+              <form>
+                <div class="file-field input-field col s12">
+                  <!-- <div class="upload-header">
+                     <label > Upload your picture</label>
+                  </div> -->
+                  <div class="file-path-wrapper">
+                    <input type="text" placeholder="Choose Image" id="image" class="file-path">
+                  </div>
+                  <div class="btn">
+                    <span>file</span>
+                    <input type="file" multiple>
+                  </div>
+               
+                </div>
+
+                <div class="name-field col s12">
+                  <div class="input-field col s12 m6 ">
+                    <input type="text"  id="first_name" placeholder="">
+                    <label for="first_name">first name</label>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <input type="text" p id="last_name" placeholder="">
+                    <label for="last_name">last name</label>
+                  </div>
+                </div>
+                <div class=" col s12 ">
+                  <label for="text-content">Share your story</label><br>
+                  <textarea type="text"  id="text-content" placeholder="" class="materialize-textarea"></textarea>
+                </div>
+                <div class=" col s12 form-radio">
+                  <div class=""> 
+                    <label>What did you interact with Vasiti as?</label> 
+                  </div>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" class="with-gap" checked>
+                      <span>Customer</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" class="with-gap" >
+                      <span>Vendor</span>
+                    </label>
+                  </p>
+                 
+                
+                </div>
+                <div class="col s12  center-xs right-align">
+                  <button class="btn btn-large">Share your story</button>
+                </div>
+              </form>
+            </div>
+          <!-- </div> -->
+        </div>
+       
+      </div>
+    </div>
+    <!----- end of modal Section ------>
+
   <!-- </div> -->
 
 
@@ -617,6 +689,8 @@
             window.setInterval(function () {
               $("#home .carousel.carousel-slider").carousel("next");
             }, 5000);
+
+            $('.modal').modal()
           });
 
     </script>

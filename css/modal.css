@@ -1,0 +1,55 @@
+.modal{
+  width: 40%;
+}
+.modal .btn{
+  background-color: var(--primaryColor);
+  /* margin-top: 1rem; */
+}
+
+.modal .input-field input{
+  border: 1px solid var(--mainGrey);
+  border-radius: 8px;
+
+}
+.input-field{
+  padding-left: 0 !important;
+}
+textarea.materialize-textarea {
+  border: 1px solid var(--mainGrey) !important;
+  border-radius: 8px !important;
+  height: 5rem !important;
+}
+.file-field{
+  display: flex;
+}
+.file-field .file-path-wrapper{
+  width: 87% !important;
+  overflow: visible;
+}
+.file-field .btn{
+  background-color: var(--primaryColor);
+  margin-right: 0 !important;
+}
+.file-path-wrapper{
+  margin: 0 !important;
+}
+.form-radio{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.form-radio p{
+  margin: 0 0 0 1rem;
+}
+
+
+
+
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: var(--primaryColor);
+}
+
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+  border: 2px solid var(--primaryColor);
+}
