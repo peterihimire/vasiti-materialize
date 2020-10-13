@@ -157,8 +157,8 @@ nav.trans-nav {
   top: 5px;
 }
 .sidenav {
-  background-color: var(--vasitiBlack);
-  color: var(--mainWhite);
+  background-color: var(--mainWhite) !important;
+  color: var(--mainBlack) !important;
   overflow-y: scroll;
 }
 .sidenav-logo {
@@ -167,13 +167,13 @@ nav.trans-nav {
   padding: 0.8rem;
 }
 .sidenav li > a {
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   font-size: 1.7rem;
   text-transform: capitalize;
   margin: .5rem 0;
 }
 .sidenav-footer {
-  margin: 100px 0 0 0;
+  margin: 60px 0 0 0;
   /* position: absolute;
   width: 100%;
   bottom: 70px; */
@@ -183,10 +183,10 @@ nav.trans-nav {
 
 }
 .login-style a{
-  color: var(--vasitiBlack) !important;
+  color: var(--mainWhite) !important;
 }
 .login-style {
-  background: var(--mainWhite);
+  background: var(--vasitiBlack);
 }
 /***** end of navbar *****/
 

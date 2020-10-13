@@ -219,7 +219,9 @@
                     <p>I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!</p>
                   </div>
                   <div class="share-img-container">
-                    <img src="images/share-story-link.png" alt="share-story-link">
+                    <a href="#share" class="modal-trigger">
+                      <img src="images/share-story-link.png" alt="share-story-link">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -227,7 +229,7 @@
                 <img src="images/black-beautiful-ladies-smiling.svg" alt="two-ladies" class="experience-img ">
               </div>
             </div>
-            <div class="col s12 m4 offset-m0">
+            <div class="col s12 m5 offset-m0 l4">
               <div class="experience-text hidden-xs">
                 <div class="">
                   <div class="experience-header">
@@ -359,7 +361,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12 ">
-            <div class="col s12 m4">
+            <div class="col s12 m5 l4">
               <div class="josiahs-experience-text">
                 <div class="experience-header">
                   <h4 class="black-text">Josiahs Experience</h4>
@@ -372,14 +374,14 @@
                 </div>
                
                 <div class="share-img-container">
-                  <img src="images/share-story-2.svg" alt="share-story-link">
+                  <a href="#share" class="modal-trigger">
+                    <img src="images/share-story-2.svg" alt="share-story-link">
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col s12 m6 offset-m2">
-              <a href="#share" class="modal-trigger ">
+            <div class="col s12 m6 offset-m1">
                 <img src="images/woman-shoppingbag.png" alt="woman-shopping" class="experience-img-2">
-              </a>
             </div>
           </div>
         </div>
@@ -603,16 +605,15 @@
     <div class="modal" id="share">
       <div class="modal-content">
         <div class="row">
-          <!-- <div class="container"> -->
             <div class="col s12">
+              <div class="modal-close-container">
+                <img src="images/x.svg" alt="modal-close" class="modal-close">
+              </div>
               <div class="modal-header">
                 <h6 class="center">Share your amazing story!</h6>
               </div>
               <form>
                 <div class="file-field input-field col s12">
-                  <!-- <div class="upload-header">
-                     <label > Upload your picture</label>
-                  </div> -->
                   <div class="file-path-wrapper">
                     <input type="text" placeholder="Choose Image" id="image" class="file-path">
                   </div>
@@ -620,7 +621,6 @@
                     <span>file</span>
                     <input type="file" multiple>
                   </div>
-               
                 </div>
 
                 <div class="name-field col s12">
@@ -638,30 +638,30 @@
                   <textarea type="text"  id="text-content" placeholder="" class="materialize-textarea"></textarea>
                 </div>
                 <div class=" col s12 form-radio">
-                  <div class=""> 
+                  <div class="col s12 m6"> 
                     <label>What did you interact with Vasiti as?</label> 
                   </div>
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" class="with-gap" checked>
-                      <span>Customer</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" class="with-gap" >
-                      <span>Vendor</span>
-                    </label>
-                  </p>
-                 
-                
+                  <div class="col s12 m6 radio-btns">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" class="with-gap" checked>
+                        <span>Customer</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" class="with-gap" >
+                        <span>Vendor</span>
+                      </label>
+                    </p>
+                  </div>
                 </div>
                 <div class="col s12  center-xs right-align">
                   <button class="btn btn-large">Share your story</button>
                 </div>
               </form>
             </div>
-          <!-- </div> -->
+      
         </div>
        
       </div>
