@@ -16,8 +16,17 @@
 .modal-header h6{
  font-weight: 1000;
 }
+
 .input-field {
   padding-left: 0 !important;
+}
+/* label and input field color active color change */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label{ 
+  color: var(--primaryColor) !important;
+}
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]){
+  border: 1px solid var(--primaryColor) !important;
+  box-shadow: none !important;
 }
 textarea.materialize-textarea {
   border: 1px solid var(--mainGrey) !important;
@@ -60,6 +69,7 @@ textarea.materialize-textarea {
 .radio-btns{
   display: flex;
 }
+
 @media (max-width: 992px) {
  .radio-btns{
    display: flex;
