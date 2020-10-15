@@ -18,8 +18,8 @@ div.carousel-item {
   position: relative;
   top: 30px;
 }
-.main-txt-container h4 {
-  font-size: 50px;
+.main-txt-container h1 {
+  font-size: 48px;
 }
 
 @media (max-width: 992px) {
@@ -160,23 +160,57 @@ section.customer-vendor {
 .vendor {
   padding: 5rem 0 0 0;
 }
-.vendor-txt-wrapper span  {
+.vendor-txt-wrapper span {
   color: var(--darkGreen);
   background-color: var(--lightGreen);
   padding: 0.4rem;
   font-size: 13px;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
-.v-name{
+.v-name {
   display: flex;
   flex-direction: column;
 }
 /***** end of vendor section *****/
 
+/***** media section *****/
+#media {
+  padding: 5rem 0;
+}
+#media .carousel.carousel-slider {
+  height: 263px !important;
+}
+.vid-img {
+  cursor: pointer;
+}
+.scale-up {
+  transition: 1s;
+}
+.scale-up:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 992px) and (min-width: 601px) {
+  #media .carousel {
+    height: 200px !important;
+    min-height: auto;
+  }
+}
+/* @media (max-width: 600px) {
+  .amazingslider-nav-4 {
+    bottom: -60px !important;
+    right: 30% !important;
+  }
+  .center.sect-title > span > hr.sect-hr {
+    margin-right: calc(36% + 5px);
+  }
+} */
+/***** end of media section *****/
+
 /***** footer section *****/
 footer {
   background-color: var(--vasitiBlack);
   padding: 5rem 0;
+  font-family: var(--sec-font);
 }
 /* .form-control {
   display: flex;
@@ -191,30 +225,28 @@ footer {
 .second-footer {
   color: var(--mainWhite);
   padding: 7rem 0 0 0 !important;
-  /* display: flex; */
+
 }
-.second-footer h6{
-  font-weight: 550;
-  font-size: 14px;
+.second-footer h6 {
+  font-family: var(--sec-font-bold);
+  font-weight: 700;
 }
 .second-footer a {
   color: var(--mainWhite);
-  font-size: 14px;
-  /* padding: 2rem 0; */
+  font-size: 13px;
+  font-family: var(--sec-font);
+  font-weight: 400;
 }
 .second-footer li {
   padding: 0.4rem 0;
   text-transform: capitalize;
 }
-.second-footer a{
-  font-size: 12px;
-}
+
 .form-control {
   width: 90%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 0 0.5rem;
 }

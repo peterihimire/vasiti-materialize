@@ -12,6 +12,7 @@
   />
     <!----- my css ------>
     <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
        #main-contents-wrapper {
@@ -25,7 +26,9 @@
     <link rel="stylesheet" href="css/index.css" />
 
     <style>
-
+    .vid-frame {
+        padding-bottom: 0;
+      }
       @media (min-width: 601px) {
         img.home-img {
           width: 95%;
@@ -152,7 +155,7 @@
             <a href="#" target="_blank"> <img src="images/in.svg" alt=""></a>
             <a href="#" target="_blank"> <img src="images/tw.svg" alt=""></a>
           </div>
-          <div class="white-txt bold-txt">
+          <div class="black-txt bold-txt">
             <p>©COPYRIGHT VASITI.COM 2020</p>
           </div>
         </div>
@@ -171,7 +174,7 @@
                 <div class="col s12 pad0 center-xs  ">
                   <div class="col s12 m5">
                     <div class="main-txt-container">
-                      <h4>Amazing Experiences from Our Wonderful Customers</h4>
+                      <h1>Amazing Experiences from Our Wonderful Customers</h1>
                       <p class="hidden-xs">Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
                     </div>
                   </div>
@@ -189,7 +192,7 @@
                 <div class="col s12 pad0 center-xs  ">
                   <div class="col s12 m6">
                     <div class="main-txt-container">
-                      <h4>Experiences from Our Wonderful Customers</h4>
+                      <h1>Amazing Experiences from Our Wonderful Customers</h1>
                       <p class="hidden-xs">Here is what customers and vendors are saying about us, you can share your stories with us too.</p>
                     </div>
                   </div>
@@ -512,7 +515,7 @@
     <!----- end of vendor-section ------>
 
     <!----- amazing slider section ------>
-    <div class="section">
+    <div class="section" id="media">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -524,7 +527,7 @@
                   style="margin-top: 20px"
                 >
                   <div class="col s12 m4 offset-m2">
-                    <div class="video-container vid-frame ">
+                    <div class="video-container vid-frame hidden">
                       <iframe
                         width="560"
                         height="315"
@@ -535,17 +538,17 @@
                       ></iframe>
                     </div>
                     <div class="vid-img">
-                      <!-- <img
+                      <img
                         src="images/woman-shoppingbag.png"
                         alt="video 1"
                         style="width: 100%"
                         class="scale-up*"
-                      /> -->
+                      />
                     </div>
                   </div>
 
                   <div class="col s12 m4">
-                    <div class="video-container vid-frame ">
+                    <div class="video-container vid-frame hidden ">
                       <iframe
                         width="560"
                         height="315"
@@ -556,12 +559,12 @@
                       ></iframe>
                     </div>
                     <div class="vid-img">
-                      <!-- <img
+                      <img
                         src="images/black-beautiful-ladies-smiling.svg"
                         alt="video 3"
                         style="width: 100%"
                         class="scale-up*"
-                      /> -->
+                      />
                     </div>
                   </div>
                 </div>
@@ -799,6 +802,23 @@
       M.Carousel.init(headerCarousel, {});
 
 
+    </script>
+    <script>
+      // Media Section script
+      $(".vid-img img").on("click", function () {
+        $(this).hide();
+        $(this).parent().parent().find(".vid-frame").show();
+        $(this)
+          .parent()
+          .parent()
+          .find(".vid-frame")
+          .children("iframe")[0].src += "&amp;autoplay=1";
+
+        //Set height of iframe to equal height of video banner
+        var imgHeight = $(this).parent().parent().height();
+        $(this).parent().parent().find(".vid-frame").height("233px");
+        // alert(imgHeight);
+      });
     </script>
   </body>
 </html>
