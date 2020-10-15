@@ -36,6 +36,9 @@ div.carousel-item {
   section#home {
     min-height: 825px;
   }
+  .main-txt-container h1 {
+    font-size: 38px;
+  }
   .main-txt-container {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -59,6 +62,9 @@ section.experience {
 }
 .experience-img {
   width: 80%;
+}
+.experience-header h4{
+  font-size: 32px;
 }
 .experience-text {
   /* padding: 70px 0 0 0; */
@@ -94,6 +100,9 @@ section.experience {
   .experience-img {
     width: 100%;
   }
+  .experience-header h4{
+    font-size: 24px;
+  }
   .experience-text {
     padding: 20px 0 0 0;
   }
@@ -106,6 +115,11 @@ section.customer-vendor {
 }
 .customer-item {
   padding: 1rem 4rem !important ;
+}
+.c-v-name h6{
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 600;
 }
 .c-v-name span {
   color: var(--darkBlue);
@@ -170,6 +184,11 @@ section.customer-vendor {
 .v-name {
   display: flex;
   flex-direction: column;
+}
+.v-name h6{
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 600;
 }
 /***** end of vendor section *****/
 
