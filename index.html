@@ -6,6 +6,10 @@
     <title>Home | Vasiti.com</title>
     <!------ materialize css ----->
     <link rel="stylesheet" href="css/materialize.css" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
     <!----- my css ------>
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +24,6 @@
     </style>
     <link rel="stylesheet" href="css/index.css" />
 
-
     <style>
 
       @media (min-width: 601px) {
@@ -29,6 +32,13 @@
         }
       }
     </style>
+
+     <!-- Insert to your webpage before the </head> -->
+     <!-- <script src="sliderengine/jquery.js"></script>
+     <script src="sliderengine/amazingslider.js"></script> -->
+     <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+     <!-- <script src="sliderengine/initslider-1.js"></script> -->
+     <!-- End of head section HTML codes -->
   </head>
   <body>
     <!----- navbar ------>
@@ -40,7 +50,7 @@
               <img src="images/vasiti-logo.png" alt="vasiti" class="logo" />
             </a>
             <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
-              <!-- <i class="material-icons black">menu</i> -->
+              <!-- <i class="material-icons black-text">menu</i> -->
               <img src="images/menu-icon.svg" alt="menu" class="menu-icon-img" />
             </a>
   
@@ -146,7 +156,6 @@
             <p>©COPYRIGHT VASITI.COM 2020</p>
           </div>
         </div>
-
       </div>
     </ul>
     <!----- end of navbar ------>
@@ -502,6 +511,36 @@
 
     <!----- end of vendor-section ------>
 
+    <!----- amazing slider section ------>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <!-- Insert to your webpage where you want to display the slider -->
+            <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:560px;margin:0px auto 56px;">
+              <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                  <ul class="amazingslider-slides" style="display:none;">
+                      <li><img src="images/Screenshot%20%2811%29.png" alt="Screenshot (11)"  title="Screenshot (11)" />
+                      </li>
+                      <li><img src="images/Screenshot%20%2813%29.png" alt="Screenshot (13)"  title="Screenshot (13)" />
+                      </li>
+                      <li><img src="images/Screenshot%20%2812%29.png" alt="Screenshot (12)"  title="Screenshot (12)" />
+                      </li>
+                  </ul>
+                  <ul class="amazingslider-thumbnails" style="display:none;">
+                      <li><img src="images/Screenshot%20%2811%29-tn.png" alt="Screenshot (11)" title="Screenshot (11)" /></li>
+                      <li><img src="images/Screenshot%20%2813%29-tn.png" alt="Screenshot (13)" title="Screenshot (13)" /></li>
+                      <li><img src="images/Screenshot%20%2812%29-tn.png" alt="Screenshot (12)" title="Screenshot (12)" /></li>
+                  </ul> 
+              </div>
+          </div>
+          <!-- End of body section HTML codes -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- end of amazing slider section ------>
+
     <!----- Footer section ------>
     <footer>
       <div class="container">
@@ -674,8 +713,12 @@
 
 
     <!-- javascript -->
-    <script src="https://paymonthlycars.com/js/jquery.min.js"></script>
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- <script src="https://paymonthlycars.com/js/jquery.min.js"></script> -->
     <script src="js/materialize.js"></script>
+  
   
     <script>
       $(document).ready(function () {
