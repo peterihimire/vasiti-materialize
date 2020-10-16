@@ -5,7 +5,7 @@
   background-color: var(--primaryColor);
   /* margin-top: 1rem; */
 }
-.modal-close-container{
+.modal-close-container {
   display: flex;
   justify-content: flex-end;
 }
@@ -13,18 +13,20 @@
   border: 1px solid var(--mainGrey);
   border-radius: 8px;
 }
-.modal-header h6{
- font-weight: 1000;
+.modal-header h6 {
+  font-weight: 1000;
 }
 
 .input-field {
   padding-left: 0 !important;
 }
 /* label and input field color active color change */
-.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label{ 
+.input-field input[type="text"]:focus + label,
+.materialize-textarea:focus:not([readonly]) + label {
   color: var(--primaryColor) !important;
 }
-.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]){
+.input-field input[type="text"]:focus,
+.materialize-textarea:focus:not([readonly]) {
   border: 1px solid var(--primaryColor) !important;
   box-shadow: none !important;
 }
@@ -35,15 +37,25 @@ textarea.materialize-textarea {
 }
 .file-field {
   display: flex;
+  align-items: center;
+  border: 1px solid var(--mainGrey);
+  border-radius: 8px;
 }
+.file-field [type="text"]:not(.browser-default) {
+  border-bottom: none !important;
+}
+
+
+
+
 .file-field .file-path-wrapper {
-  width: 87% !important;
+  width: 100% !important;
   overflow: visible;
 }
-.file-field .btn {
+/* .file-field .btn {
   background-color: var(--primaryColor);
   margin-right: 0 !important;
-}
+} */
 .file-path-wrapper {
   margin: 0 !important;
 }
@@ -66,18 +78,18 @@ textarea.materialize-textarea {
 [type="radio"].with-gap:checked + span:after {
   border: 2px solid var(--primaryColor);
 }
-.radio-btns{
+.radio-btns {
   display: flex;
 }
 
 @media (max-width: 992px) {
- .radio-btns{
-   display: flex;
- }
+  .radio-btns {
+    display: flex;
+  }
 
- .modal {
-  width: 70%;
-}
+  .modal {
+    width: 70%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -93,7 +105,7 @@ textarea.materialize-textarea {
   .form-radio p {
     margin: 0 0 0 0rem;
   }
-  .radio-btns{
+  .radio-btns {
     display: flex;
   }
 }

@@ -306,3 +306,25 @@ input[type="email"]:not(.browser-default) {
   }
 }
 /***** end of footer section *****/
+
+/***** about section *****/
+
+
+section#about {
+  position: relative;
+  padding-top: 10% ;
+}
+
+.tab-click{
+  display: flex;
+}
+.tab-text{
+  color: var(--mainBlack);
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/***** end of about section *****/
