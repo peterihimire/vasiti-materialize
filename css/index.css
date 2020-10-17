@@ -63,7 +63,7 @@ section.experience {
 .experience-img {
   width: 80%;
 }
-.experience-header h4{
+.experience-header h4 {
   font-size: 32px;
 }
 .experience-text {
@@ -100,7 +100,7 @@ section.experience {
   .experience-img {
     width: 100%;
   }
-  .experience-header h4{
+  .experience-header h4 {
     font-size: 24px;
   }
   .experience-text {
@@ -116,7 +116,7 @@ section.customer-vendor {
 .customer-item {
   padding: 1rem 4rem !important ;
 }
-.c-v-name h6{
+.c-v-name h6 {
   font-family: var(--font);
   font-size: 22px;
   font-weight: 600;
@@ -185,7 +185,7 @@ section.customer-vendor {
   display: flex;
   flex-direction: column;
 }
-.v-name h6{
+.v-name h6 {
   font-family: var(--font);
   font-size: 22px;
   font-weight: 600;
@@ -244,7 +244,6 @@ footer {
 .second-footer {
   color: var(--mainWhite);
   padding: 7rem 0 0 0 !important;
-
 }
 .second-footer h6 {
   font-family: var(--sec-font-bold);
@@ -309,22 +308,119 @@ input[type="email"]:not(.browser-default) {
 
 /***** about section *****/
 
-
 section#about {
   position: relative;
-  padding-top: 10% ;
+  padding-top: 10%;
 }
 
-.tab-click{
-  display: flex;
+.tabs .tab {
+  display: inline-block;
+  text-align: left;
+  line-height: 30px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
-.tab-text{
+.tabs {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.tabs .tab a {
+  /* color: rgba(110, 118, 238, 0.7); */
+  display: block;
+  background-color: var(--mainGrey);
+  width: 70%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 14px;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: var(--primaryColor);
+  /* border-radius: 10px; */
+}
+
+.tabs .tab a:hover .tab-icon-div,
+.tabs .tab a.active .tab-icon-div {
+  background-color: var(--mainWhite);
+  border-radius: 20px;
+}
+
+.tabs .tab a:hover .tab-icon-div i,
+.tabs .tab a.active .tab-icon-div i {
+  color: var(--primaryColor) !important;
+}
+
+.tabs .tab a:hover .tab-text,
+.tabs .tab a.active .tab-text {
+  color: var(--mainWhite) !important;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: var(--primaryColor);
+  outline: none;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  background-color: #0a50e7;
+  will-change: left, right;
+}
+.tab-click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.tab-text {
   color: var(--mainBlack);
   display: flex;
   flex-direction: column;
-  padding: 0rem;
-  /* align-items: center;
-  justify-content: center; */
+  padding: 0 0 0 1rem;
 }
 
+.tab-text h6 {
+  line-height: 20% !important;
+  display: inline;
+  margin: 2rem 0 0 0;
+}
+.tab-text p {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline;
+  font-size: 10px !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+.tab-icon-div {
+  padding: 1rem;
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0 0;
+}
+.tab-icon-div i {
+  color: var(--mainWhite) !important;
+}
 /***** end of about section *****/
