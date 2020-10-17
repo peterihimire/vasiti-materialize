@@ -310,7 +310,7 @@ input[type="email"]:not(.browser-default) {
 
 section#about {
   position: relative;
-  padding-top: 10%;
+  padding-top: 12%;
 }
 
 .tabs .tab {
@@ -334,7 +334,6 @@ section#about {
   white-space: nowrap;
 }
 .tabs .tab a {
-  /* color: rgba(110, 118, 238, 0.7); */
   display: block;
   background-color: var(--mainGrey);
   width: 70%;
@@ -351,7 +350,6 @@ section#about {
 .tabs .tab a:hover,
 .tabs .tab a.active {
   background-color: var(--primaryColor);
-  /* border-radius: 10px; */
 }
 
 .tabs .tab a:hover .tab-icon-div,
@@ -422,5 +420,67 @@ section#about {
 }
 .tab-icon-div i {
   color: var(--mainWhite) !important;
+}
+/* Tablet */
+@media (max-width: 992px) {
+  section#about {
+    position: relative;
+    padding-top: 15%;
+  }
+}
+/* Phone */
+@media (max-width: 600px) {
+  section#about {
+    position: relative;
+    padding-top: 30%;
+  }
+  .tab-icon-div {
+    padding: .2rem;
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 0 0;
+  }
+  .tabs .tab a {
+    display: block;
+    background-color: var(--mainGrey);
+    width: 90%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+    transition: color 0.28s ease, background-color 0.28s ease;
+  }
+  .tabs .tab {
+    display: inline-block;
+    text-align: left;
+    line-height: 30px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  .tabs {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  .tab-text h6 {
+    line-height: 10% !important;
+    display: inline;
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+  }
 }
 /***** end of about section *****/
