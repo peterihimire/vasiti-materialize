@@ -230,6 +230,9 @@ nav.trans-nav {
   background-color: var(--primaryColor);
   margin-left: 0 !important;
   margin-right: 0 !important;
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: var(--font-smbold) !important;
 }
 .sidenav-trigger {
   position: relative;

@@ -261,18 +261,27 @@ footer {
 }
 
 .form-control {
-  width: 90%;
+  width: 100%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   align-items: center;
   padding: 0 0.5rem;
 }
+.form-control button{
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
 .subscribe-banner {
   width: 100%;
 }
-input[type="email"]:not(.browser-default) {
+.form-control [type="email"]:not(.browser-default) {
   border-bottom: none;
+  margin: 0;
+}
+input[type=email]:not(.browser-default):focus:not([readonly]){
+border-bottom: none ;
+box-shadow: none;
 }
 .be-a-member {
   width: 95%;
@@ -299,6 +308,11 @@ input[type="email"]:not(.browser-default) {
   }
   .form-control {
     width: 100%;
+  }
+  .form-control button{
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    /* padding: .5rem !important; */
   }
   .subscribe-banner {
     width: 100% !important;
